@@ -1,0 +1,34 @@
+
+*******************************************  Drifts coefficients *******************************************
+
+radius_mean = 0.18824698045631716
+concavity_mean = 0.11795262220816793
+smoothness_se = 0.1034725611642342
+area_mean = 0.09656627872605172
+fractal_dimension_mean = 0.09407124541998657
+concave_points_mean = 0.09227498642322418
+id = 0.08611319250149507
+texture_se = 0.0780733352123133
+texture_worst = 0.07724532374595272
+perimeter_worst = 0.07285779100701872
+symmetry_worst = 0.06132028129704614
+symmetry_mean = 0.06037403158061183
+compactness_mean = 0.05602465130027712
+radius_worst = 0.054089531102846644
+fractal_dimension_worst = 0.05181241364139444
+concavity_worst = 0.050776110374031624
+concave_points_se = 0.04281118313867571
+texture_mean = 0.037299355876509566
+compactness_se = 0.035244966281475776
+smoothness_worst = 0.034056396895558505
+symmetry_se = 0.029207941210842137
+area_worst = 0.028300875100536915
+perimeter_se = 0.02233740522035621
+concave_points_worst = 0.020491651142167777
+fractal_dimension_se = 0.01486364792498751
+compactness_worst = 0.011574287305198938
+concavity_se = 0.011133643594167797
+area_se = 0.010336222837855402
+perimeter_mean = 0.009982539235163568
+smoothness_mean = 0.0052684764451531585
+radius_se = 0.004306072084086843

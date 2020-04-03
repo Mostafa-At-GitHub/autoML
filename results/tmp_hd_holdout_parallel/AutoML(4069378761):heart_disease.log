@@ -1,0 +1,603 @@
+[DEBUG] [2020-02-13 16:02:16,911:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:16,911:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[INFO] [2020-02-13 16:02:16,912:AutoML(4069378761):heart_disease] Starting to create dummy predictions.
+[DEBUG] [2020-02-13 16:02:16,914:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:16,914:pynisher] Restricting your function to 60 seconds wall time.
+[DEBUG] [2020-02-13 16:02:16,914:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:16,914:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f2550a446a0>, 'config': 1, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 1, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': None, 'exclude': None, 'disable_file_output': False, 'instance': None, 'init_params': {'instance': None}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:16,920:pynisher] call function
+[DEBUG] [2020-02-13 16:02:17,072:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:17,074:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:17,074:pynisher] return value: (None, 0)
+[INFO] [2020-02-13 16:02:17,081:AutoML(4069378761):heart_disease] Finished creating dummy predictions.
+[DEBUG] [2020-02-13 16:02:18,596:autosklearn.util.backend] Created Configuration space file ../results/tmp_hd_holdout_parallel/space.pcs
+[INFO] [2020-02-13 16:02:18,670:AutoML(4069378761):heart_disease] Start Ensemble with 58.23sec time left
+[INFO] [2020-02-13 16:02:18,671:AutoML(4069378761):heart_disease] Not starting ensemble builder because ensemble size is <= 0.
+[INFO] [2020-02-13 16:02:18,671:AutoML(4069378761):heart_disease] Start SMAC with 58.23sec time left
+[INFO] [2020-02-13 16:02:18,672:smac.scenario.scenario.Scenario] Output to ../results/tmp_hd_holdout_parallel/smac3-output
+[DEBUG] [2020-02-13 16:02:18,672:smac.scenario.scenario.Scenario] Scenario Options:
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] abort_on_first_run_crash = False
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] always_race_default = False
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] execdir = .
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] deterministic = True
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] intensification_percentage = 0.5
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] run_obj = quality
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] overall_obj = par10
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] cost_for_crash = 1.0
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] cutoff = 30.0
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] memory_limit = 3072
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] algo_runs_timelimit = inf
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] wallclock_limit = 51.231223344802856
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] ta_run_limit = inf
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] minR = 1
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] maxR = 2000
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] output_dir = ../results/tmp_hd_holdout_parallel/smac3-output
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] input_psmac_dirs = ../results/tmp_hd_holdout_parallel/smac3-output/run_*
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] shared_model = True
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] initial_incumbent = RANDOM
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] Output directory does not exist! Will be created.
+[DEBUG] [2020-02-13 16:02:18,673:smac.scenario.scenario.Scenario] Writing scenario-file to ../results/tmp_hd_holdout_parallel/smac3-output/run_4069378761/scenario.txt.
+[DEBUG] [2020-02-13 16:02:18,683:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:18,683:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:18,683:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:18,684:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f25501f1898>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'no_encoding'
+  classifier:__choice__, Value: 'adaboost'
+  classifier:adaboost:algorithm, Value: 'SAMME'
+  classifier:adaboost:learning_rate, Value: 0.7506736009453755
+  classifier:adaboost:max_depth, Value: 9
+  classifier:adaboost:n_estimators, Value: 268
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'no_preprocessing'
+  rescaling:__choice__, Value: 'standardize'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 2, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:18,690:pynisher] call function
+[DEBUG] [2020-02-13 16:02:19,777:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:19,779:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:19,779:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:19,785:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.266667, time: 1.095527, additional: {'duration': 0.9175078868865967, 'num_run': 2, 'train_loss': 0.0, 'configuration_origin': 'Random initial design.'}
+[DEBUG] [2020-02-13 16:02:19,786:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:19,787:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 1 observations
+[DEBUG] [2020-02-13 16:02:19,991:smac.optimizer.ei_optimization.LocalSearch] Local search took 1 steps and looked at 30 configurations. Computing the acquisition value for one configuration took 0.003423 seconds on average.
+[DEBUG] [2020-02-13 16:02:23,482:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)'], [0.00126156626101008, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:02:23,484:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:23,484:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:23,484:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:23,484:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1ee80>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.0813244511146118
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'gaussian_nb'
+  imputation:strategy, Value: 'mean'
+  preprocessor:__choice__, Value: 'select_percentile_classification'
+  preprocessor:select_percentile_classification:percentile, Value: 22.4762681663278
+  preprocessor:select_percentile_classification:score_func, Value: 'f_classif'
+  rescaling:__choice__, Value: 'minmax'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 3, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:23,570:pynisher] call function
+[DEBUG] [2020-02-13 16:02:25,184:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:25,186:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:25,186:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:25,192:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.186667, time: 1.702397, additional: {'duration': 1.5152692794799805, 'num_run': 3, 'train_loss': 0.22368421052631582, 'configuration_origin': 'Random Search (sorted)'}
+[INFO] [2020-02-13 16:02:25,193:smac.intensification.intensification.Intensifier] Challenger (0.1867) is better than incumbent (0.2667) on 1 runs.
+[INFO] [2020-02-13 16:02:25,193:smac.intensification.intensification.Intensifier] Challenger (0.1867) is better than incumbent (0.2667) on 1 runs.
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:__choice__ : 'no_encoding' -> 'one_hot_encoding'
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:__choice__ : 'no_encoding' -> 'one_hot_encoding'
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:minimum_fraction : None -> 0.0813244511146118
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:minimum_fraction : None -> 0.0813244511146118
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:use_minimum_fraction : None -> 'True'
+[INFO] [2020-02-13 16:02:25,194:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:use_minimum_fraction : None -> 'True'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   classifier:__choice__ : 'adaboost' -> 'gaussian_nb'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   classifier:__choice__ : 'adaboost' -> 'gaussian_nb'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   imputation:strategy : 'most_frequent' -> 'mean'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   imputation:strategy : 'most_frequent' -> 'mean'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:__choice__ : 'no_preprocessing' -> 'select_percentile_classification'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:__choice__ : 'no_preprocessing' -> 'select_percentile_classification'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:percentile : None -> 22.4762681663278
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:percentile : None -> 22.4762681663278
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:score_func : None -> 'f_classif'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:score_func : None -> 'f_classif'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   rescaling:__choice__ : 'standardize' -> 'minmax'
+[INFO] [2020-02-13 16:02:25,270:smac.intensification.intensification.Intensifier]   rescaling:__choice__ : 'standardize' -> 'minmax'
+[DEBUG] [2020-02-13 16:02:25,275:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:25,275:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:25,275:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:25,275:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1ee48>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'False'
+  classifier:__choice__, Value: 'random_forest'
+  classifier:random_forest:bootstrap, Value: 'True'
+  classifier:random_forest:criterion, Value: 'entropy'
+  classifier:random_forest:max_depth, Constant: 'None'
+  classifier:random_forest:max_features, Value: 0.47813542542127696
+  classifier:random_forest:max_leaf_nodes, Constant: 'None'
+  classifier:random_forest:min_impurity_decrease, Constant: 0.0
+  classifier:random_forest:min_samples_leaf, Value: 8
+  classifier:random_forest:min_samples_split, Value: 10
+  classifier:random_forest:min_weight_fraction_leaf, Constant: 0.0
+  classifier:random_forest:n_estimators, Constant: 100
+  imputation:strategy, Value: 'mean'
+  preprocessor:__choice__, Value: 'liblinear_svc_preprocessor'
+  preprocessor:liblinear_svc_preprocessor:C, Value: 1.4105366467353053
+  preprocessor:liblinear_svc_preprocessor:dual, Constant: 'False'
+  preprocessor:liblinear_svc_preprocessor:fit_intercept, Constant: 'True'
+  preprocessor:liblinear_svc_preprocessor:intercept_scaling, Constant: 1
+  preprocessor:liblinear_svc_preprocessor:loss, Value: 'squared_hinge'
+  preprocessor:liblinear_svc_preprocessor:multi_class, Constant: 'ovr'
+  preprocessor:liblinear_svc_preprocessor:penalty, Constant: 'l1'
+  preprocessor:liblinear_svc_preprocessor:tol, Value: 4.7101626189254456e-05
+  rescaling:__choice__, Value: 'standardize'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 4, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:25,282:pynisher] call function
+[DEBUG] [2020-02-13 16:02:27,392:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:27,394:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:27,394:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:27,401:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.213333, time: 2.119578, additional: {'duration': 2.0153496265411377, 'num_run': 4, 'train_loss': 0.17763157894736847, 'configuration_origin': 'Random Search'}
+[INFO] [2020-02-13 16:02:27,470:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1867
+[INFO] [2020-02-13 16:02:27,470:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1867
+[DEBUG] [2020-02-13 16:02:27,471:root] Remaining budget: 42.437597 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] #Incumbent changed: 1
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] #Target algorithm runs: 3 / inf
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Used wallclock time: 8.79 / 51.23 sec 
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Used target algorithm runtime: 4.92 / inf sec
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Average Configurations per Intensify: 2.00
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.00
+[DEBUG] [2020-02-13 16:02:27,471:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:27,477:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:27,480:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 6 observations
+[DEBUG] [2020-02-13 16:02:27,596:smac.optimizer.ei_optimization.LocalSearch] Local search took 1 steps and looked at 39 configurations. Computing the acquisition value for one configuration took 0.002478 seconds on average.
+[DEBUG] [2020-02-13 16:02:27,697:smac.optimizer.ei_optimization.LocalSearch] Local search took 1 steps and looked at 27 configurations. Computing the acquisition value for one configuration took 0.003215 seconds on average.
+[DEBUG] [2020-02-13 16:02:29,193:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)'], [0.005858070945434026, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:02:29,277:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:29,277:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:29,277:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:29,278:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f25501d8dd8>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.11055446073623384
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.7444513913584672
+  imputation:strategy, Value: 'mean'
+  preprocessor:__choice__, Value: 'pca'
+  preprocessor:pca:keep_variance, Value: 0.8817753360084258
+  preprocessor:pca:whiten, Value: 'False'
+  rescaling:__choice__, Value: 'normalize'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 5, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:29,285:pynisher] call function
+[DEBUG] [2020-02-13 16:02:30,578:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:30,580:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:30,580:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:30,587:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.453333, time: 1.303048, additional: {'duration': 1.2086169719696045, 'num_run': 5, 'train_loss': 0.45394736842105265, 'configuration_origin': 'Random Search (sorted)'}
+[DEBUG] [2020-02-13 16:02:30,591:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:30,591:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:30,591:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:30,592:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f25501d8fd0>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.04685566791591194
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.17243640823103967
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'select_percentile_classification'
+  preprocessor:select_percentile_classification:percentile, Value: 98.88325061601653
+  preprocessor:select_percentile_classification:score_func, Value: 'chi2'
+  rescaling:__choice__, Value: 'minmax'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 6, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:30,598:pynisher] call function
+[DEBUG] [2020-02-13 16:02:31,590:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:31,591:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:31,591:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:31,598:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.146667, time: 0.999925, additional: {'duration': 0.9071581363677979, 'num_run': 6, 'train_loss': 0.09210526315789469, 'configuration_origin': 'Random Search'}
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier] Challenger (0.1467) is better than incumbent (0.1867) on 1 runs.
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier] Challenger (0.1467) is better than incumbent (0.1867) on 1 runs.
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   balancing:strategy : 'none' -> 'weighting'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   balancing:strategy : 'none' -> 'weighting'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:minimum_fraction : 0.0813244511146118 -> 0.04685566791591194
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   categorical_encoding:one_hot_encoding:minimum_fraction : 0.0813244511146118 -> 0.04685566791591194
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   classifier:__choice__ : 'gaussian_nb' -> 'qda'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   classifier:__choice__ : 'gaussian_nb' -> 'qda'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   classifier:qda:reg_param : None -> 0.17243640823103967
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   classifier:qda:reg_param : None -> 0.17243640823103967
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   imputation:strategy : 'mean' -> 'most_frequent'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   imputation:strategy : 'mean' -> 'most_frequent'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:percentile : 22.4762681663278 -> 98.88325061601653
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:percentile : 22.4762681663278 -> 98.88325061601653
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:score_func : 'f_classif' -> 'chi2'
+[INFO] [2020-02-13 16:02:31,599:smac.intensification.intensification.Intensifier]   preprocessor:select_percentile_classification:score_func : 'f_classif' -> 'chi2'
+[INFO] [2020-02-13 16:02:31,600:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1467
+[INFO] [2020-02-13 16:02:31,600:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1467
+[DEBUG] [2020-02-13 16:02:31,601:root] Remaining budget: 38.307887 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] #Incumbent changed: 2
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] #Target algorithm runs: 5 / inf
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Used wallclock time: 12.92 / 51.23 sec 
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Used target algorithm runtime: 7.22 / inf sec
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Average Configurations per Intensify: 2.00
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.00
+[DEBUG] [2020-02-13 16:02:31,601:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:31,679:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:31,686:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 12 observations
+[DEBUG] [2020-02-13 16:02:31,787:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:32,070:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:32,271:smac.optimizer.ei_optimization.LocalSearch] Local search took 3 steps and looked at 107 configurations. Computing the acquisition value for one configuration took 0.004329 seconds on average.
+[DEBUG] [2020-02-13 16:02:32,280:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:32,383:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:32,489:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:32,792:smac.optimizer.ei_optimization.LocalSearch] Local search took 4 steps and looked at 110 configurations. Computing the acquisition value for one configuration took 0.003713 seconds on average.
+[DEBUG] [2020-02-13 16:02:34,880:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [0.005661795912844922, 'Random Search (sorted)'], [array([[0.0056618]]), 'Local Search'], [array([[0.0056618]]), 'Local Search'], [0.005611892484351339, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:02:34,891:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:34,891:pynisher] Restricting your function to 30 seconds wall time.
+[DEBUG] [2020-02-13 16:02:34,891:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:34,892:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1eeb8>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'no_encoding'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.3852952765746872
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'liblinear_svc_preprocessor'
+  preprocessor:liblinear_svc_preprocessor:C, Value: 9.321082529099513
+  preprocessor:liblinear_svc_preprocessor:dual, Constant: 'False'
+  preprocessor:liblinear_svc_preprocessor:fit_intercept, Constant: 'True'
+  preprocessor:liblinear_svc_preprocessor:intercept_scaling, Constant: 1
+  preprocessor:liblinear_svc_preprocessor:loss, Value: 'squared_hinge'
+  preprocessor:liblinear_svc_preprocessor:multi_class, Constant: 'ovr'
+  preprocessor:liblinear_svc_preprocessor:penalty, Constant: 'l1'
+  preprocessor:liblinear_svc_preprocessor:tol, Value: 0.0002529400461870885
+  rescaling:__choice__, Value: 'robust_scaler'
+  rescaling:robust_scaler:q_max, Value: 0.9503095475486327
+  rescaling:robust_scaler:q_min, Value: 0.23900532900034
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 7, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:34,974:pynisher] call function
+[DEBUG] [2020-02-13 16:02:36,180:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:36,181:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:36,182:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:36,188:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.133333, time: 1.290396, additional: {'duration': 1.1205768585205078, 'num_run': 7, 'train_loss': 0.17105263157894735, 'configuration_origin': 'Random Search (sorted)'}
+[INFO] [2020-02-13 16:02:36,189:smac.intensification.intensification.Intensifier] Challenger (0.1333) is better than incumbent (0.1467) on 1 runs.
+[INFO] [2020-02-13 16:02:36,189:smac.intensification.intensification.Intensifier] Challenger (0.1333) is better than incumbent (0.1467) on 1 runs.
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier] Changes in incumbent:
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   categorical_encoding:__choice__ : 'one_hot_encoding' -> 'no_encoding'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   categorical_encoding:__choice__ : 'one_hot_encoding' -> 'no_encoding'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   classifier:qda:reg_param : 0.17243640823103967 -> 0.3852952765746872
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   classifier:qda:reg_param : 0.17243640823103967 -> 0.3852952765746872
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:__choice__ : 'select_percentile_classification' -> 'liblinear_svc_preprocessor'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:__choice__ : 'select_percentile_classification' -> 'liblinear_svc_preprocessor'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:C : None -> 9.321082529099513
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:C : None -> 9.321082529099513
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:dual : None -> 'False'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:dual : None -> 'False'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:fit_intercept : None -> 'True'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:fit_intercept : None -> 'True'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:intercept_scaling : None -> 1
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:intercept_scaling : None -> 1
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:loss : None -> 'squared_hinge'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:loss : None -> 'squared_hinge'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:multi_class : None -> 'ovr'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:multi_class : None -> 'ovr'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:penalty : None -> 'l1'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:penalty : None -> 'l1'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:tol : None -> 0.0002529400461870885
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   preprocessor:liblinear_svc_preprocessor:tol : None -> 0.0002529400461870885
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:__choice__ : 'minmax' -> 'robust_scaler'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:__choice__ : 'minmax' -> 'robust_scaler'
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:robust_scaler:q_max : None -> 0.9503095475486327
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:robust_scaler:q_max : None -> 0.9503095475486327
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:robust_scaler:q_min : None -> 0.23900532900034
+[INFO] [2020-02-13 16:02:36,190:smac.intensification.intensification.Intensifier]   rescaling:robust_scaler:q_min : None -> 0.23900532900034
+[DEBUG] [2020-02-13 16:02:36,197:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:36,197:pynisher] Restricting your function to 28 seconds wall time.
+[DEBUG] [2020-02-13 16:02:36,197:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:36,197:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1efd0>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.0006668515010770337
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'libsvm_svc'
+  classifier:libsvm_svc:C, Value: 39.2213091916657
+  classifier:libsvm_svc:gamma, Value: 0.02617764834686418
+  classifier:libsvm_svc:kernel, Value: 'rbf'
+  classifier:libsvm_svc:max_iter, Constant: -1
+  classifier:libsvm_svc:shrinking, Value: 'False'
+  classifier:libsvm_svc:tol, Value: 0.002521197232380212
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'feature_agglomeration'
+  preprocessor:feature_agglomeration:affinity, Value: 'manhattan'
+  preprocessor:feature_agglomeration:linkage, Value: 'average'
+  preprocessor:feature_agglomeration:n_clusters, Value: 395
+  preprocessor:feature_agglomeration:pooling_func, Value: 'max'
+  rescaling:__choice__, Value: 'none'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 8, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:36,271:pynisher] call function
+[DEBUG] [2020-02-13 16:02:37,973:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:37,975:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:37,975:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:38,071:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.520000, time: 1.779553, additional: {'duration': 1.5117239952087402, 'num_run': 8, 'train_loss': 0.0, 'configuration_origin': 'Random Search'}
+[DEBUG] [2020-02-13 16:02:38,075:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:38,075:pynisher] Restricting your function to 26 seconds wall time.
+[DEBUG] [2020-02-13 16:02:38,075:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:38,075:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1eeb8>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'no_encoding'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.8931797495246505
+  imputation:strategy, Value: 'mean'
+  preprocessor:__choice__, Value: 'liblinear_svc_preprocessor'
+  preprocessor:liblinear_svc_preprocessor:C, Value: 1.32691709608137
+  preprocessor:liblinear_svc_preprocessor:dual, Constant: 'False'
+  preprocessor:liblinear_svc_preprocessor:fit_intercept, Constant: 'True'
+  preprocessor:liblinear_svc_preprocessor:intercept_scaling, Constant: 1
+  preprocessor:liblinear_svc_preprocessor:loss, Value: 'squared_hinge'
+  preprocessor:liblinear_svc_preprocessor:multi_class, Constant: 'ovr'
+  preprocessor:liblinear_svc_preprocessor:penalty, Constant: 'l1'
+  preprocessor:liblinear_svc_preprocessor:tol, Value: 3.2585563975023956e-05
+  rescaling:__choice__, Value: 'robust_scaler'
+  rescaling:robust_scaler:q_max, Value: 0.8548375587522004
+  rescaling:robust_scaler:q_min, Value: 0.025044967639054568
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 9, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:38,177:pynisher] call function
+[DEBUG] [2020-02-13 16:02:39,789:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:39,790:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:39,790:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:39,797:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.253333, time: 1.715249, additional: {'duration': 1.5988941192626953, 'num_run': 9, 'train_loss': 0.256578947368421, 'configuration_origin': 'Random Search (sorted)'}
+[INFO] [2020-02-13 16:02:39,798:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[INFO] [2020-02-13 16:02:39,798:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[DEBUG] [2020-02-13 16:02:39,871:root] Remaining budget: 30.037252 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] #Incumbent changed: 3
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] #Target algorithm runs: 8 / inf
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Used wallclock time: 21.19 / 51.23 sec 
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Used target algorithm runtime: 12.01 / inf sec
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Average Configurations per Intensify: 2.33
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.20
+[DEBUG] [2020-02-13 16:02:39,872:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:39,888:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:39,972:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 21 observations
+[DEBUG] [2020-02-13 16:02:40,079:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,282:smac.optimizer.ei_optimization.LocalSearch] Local search took 2 steps and looked at 37 configurations. Computing the acquisition value for one configuration took 0.005032 seconds on average.
+[DEBUG] [2020-02-13 16:02:40,288:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,386:smac.optimizer.ei_optimization.LocalSearch] Local search took 2 steps and looked at 20 configurations. Computing the acquisition value for one configuration took 0.004490 seconds on average.
+[DEBUG] [2020-02-13 16:02:40,391:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,492:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,590:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,780:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:40,887:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:41,079:smac.optimizer.ei_optimization.LocalSearch] Local search took 6 steps and looked at 147 configurations. Computing the acquisition value for one configuration took 0.003348 seconds on average.
+[DEBUG] [2020-02-13 16:02:43,098:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[0.020383245791450892, 'Random Search (sorted)'], [array([[0.02038325]]), 'Local Search'], [0.019401679621564867, 'Random Search (sorted)'], [0.019401679621564867, 'Random Search (sorted)'], [0.019401679621564867, 'Random Search (sorted)'], [0.01931635651578105, 'Random Search (sorted)'], [0.01931635651578105, 'Random Search (sorted)'], [0.019050392989069367, 'Random Search (sorted)'], [0.019050392989069367, 'Random Search (sorted)'], [0.018629781220156565, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:02:43,174:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:43,174:pynisher] Restricting your function to 21 seconds wall time.
+[DEBUG] [2020-02-13 16:02:43,174:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:43,175:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f2550753fd0>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.0024026219247921493
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'extra_trees'
+  classifier:extra_trees:bootstrap, Value: 'False'
+  classifier:extra_trees:criterion, Value: 'entropy'
+  classifier:extra_trees:max_depth, Constant: 'None'
+  classifier:extra_trees:max_features, Value: 0.8486307762257107
+  classifier:extra_trees:max_leaf_nodes, Constant: 'None'
+  classifier:extra_trees:min_impurity_decrease, Constant: 0.0
+  classifier:extra_trees:min_samples_leaf, Value: 17
+  classifier:extra_trees:min_samples_split, Value: 20
+  classifier:extra_trees:min_weight_fraction_leaf, Constant: 0.0
+  classifier:extra_trees:n_estimators, Constant: 100
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'select_percentile_classification'
+  preprocessor:select_percentile_classification:percentile, Value: 83.9752350897333
+  preprocessor:select_percentile_classification:score_func, Value: 'mutual_info'
+  rescaling:__choice__, Value: 'normalize'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 10, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:43,182:pynisher] call function
+[DEBUG] [2020-02-13 16:02:44,997:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:45,070:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:45,071:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:45,078:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.186667, time: 1.896525, additional: {'duration': 1.798741102218628, 'num_run': 10, 'train_loss': 0.1907894736842105, 'configuration_origin': 'Random Search (sorted)'}
+[DEBUG] [2020-02-13 16:02:45,094:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:45,095:pynisher] Restricting your function to 19 seconds wall time.
+[DEBUG] [2020-02-13 16:02:45,095:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:45,095:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f2550753048>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'False'
+  classifier:__choice__, Value: 'passive_aggressive'
+  classifier:passive_aggressive:C, Value: 0.00018591571790202866
+  classifier:passive_aggressive:average, Value: 'True'
+  classifier:passive_aggressive:fit_intercept, Constant: 'True'
+  classifier:passive_aggressive:loss, Value: 'squared_hinge'
+  classifier:passive_aggressive:tol, Value: 0.019376221937211707
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'fast_ica'
+  preprocessor:fast_ica:algorithm, Value: 'parallel'
+  preprocessor:fast_ica:fun, Value: 'exp'
+  preprocessor:fast_ica:whiten, Value: 'False'
+  rescaling:__choice__, Value: 'robust_scaler'
+  rescaling:robust_scaler:q_max, Value: 0.9542775574521878
+  rescaling:robust_scaler:q_min, Value: 0.19004802181382618
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 11, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:45,180:pynisher] call function
+[DEBUG] [2020-02-13 16:02:48,084:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:48,086:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:48,086:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:48,176:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.293333, time: 2.991744, additional: {'duration': 2.80112361907959, 'num_run': 11, 'train_loss': 0.22368421052631582, 'configuration_origin': 'Random Search'}
+[INFO] [2020-02-13 16:02:48,177:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[INFO] [2020-02-13 16:02:48,177:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[DEBUG] [2020-02-13 16:02:48,178:root] Remaining budget: 21.730219 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] #Incumbent changed: 3
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] #Target algorithm runs: 10 / inf
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Used wallclock time: 29.50 / 51.23 sec 
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Used target algorithm runtime: 16.89 / inf sec
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Average Configurations per Intensify: 2.25
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.16
+[DEBUG] [2020-02-13 16:02:48,179:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:48,201:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:48,284:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 29 observations
+[DEBUG] [2020-02-13 16:02:48,405:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,592:smac.optimizer.ei_optimization.LocalSearch] Local search took 2 steps and looked at 54 configurations. Computing the acquisition value for one configuration took 0.002165 seconds on average.
+[DEBUG] [2020-02-13 16:02:48,595:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,685:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,697:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,779:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,887:smac.optimizer.ei_optimization.LocalSearch] Local search took 5 steps and looked at 81 configurations. Computing the acquisition value for one configuration took 0.001665 seconds on average.
+[DEBUG] [2020-02-13 16:02:48,903:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,973:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:48,978:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:49,074:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:02:49,105:smac.optimizer.ei_optimization.LocalSearch] Local search took 5 steps and looked at 64 configurations. Computing the acquisition value for one configuration took 0.002968 seconds on average.
+[DEBUG] [2020-02-13 16:02:51,880:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[0.0248943695424243, 'Random Search (sorted)'], [0.0248943695424243, 'Random Search (sorted)'], [0.023320827368455144, 'Random Search (sorted)'], [0.023320827368455144, 'Random Search (sorted)'], [0.023219273858333563, 'Random Search (sorted)'], [array([[0.02321927]]), 'Local Search'], [0.022721654745500468, 'Random Search (sorted)'], [0.022721654745500468, 'Random Search (sorted)'], [0.02211512706174125, 'Random Search (sorted)'], [0.021615993441822405, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:02:51,890:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:51,891:pynisher] Restricting your function to 13 seconds wall time.
+[DEBUG] [2020-02-13 16:02:51,891:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:51,891:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1ef60>, 'config': Configuration:
+  balancing:strategy, Value: 'none'
+  categorical_encoding:__choice__, Value: 'one_hot_encoding'
+  categorical_encoding:one_hot_encoding:minimum_fraction, Value: 0.0023783195698424977
+  categorical_encoding:one_hot_encoding:use_minimum_fraction, Value: 'True'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.10508080773022566
+  imputation:strategy, Value: 'mean'
+  preprocessor:__choice__, Value: 'kitchen_sinks'
+  preprocessor:kitchen_sinks:gamma, Value: 0.009703087757431225
+  preprocessor:kitchen_sinks:n_components, Value: 96
+  rescaling:__choice__, Value: 'minmax'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 12, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:51,975:pynisher] call function
+[DEBUG] [2020-02-13 16:02:53,182:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:53,184:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:53,184:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:53,194:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.453333, time: 1.293615, additional: {'duration': 1.0992317199707031, 'num_run': 12, 'train_loss': 0.45394736842105265, 'configuration_origin': 'Random Search (sorted)'}
+[DEBUG] [2020-02-13 16:02:53,279:pynisher] Restricting your function to 3072 mb memory.
+[DEBUG] [2020-02-13 16:02:53,279:pynisher] Restricting your function to 11 seconds wall time.
+[DEBUG] [2020-02-13 16:02:53,280:pynisher] Allowing a grace period of 0 seconds.
+[DEBUG] [2020-02-13 16:02:53,280:pynisher] Function called with argument: (), {'queue': <multiprocessing.queues.Queue object at 0x7f254fe1efd0>, 'config': Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'no_encoding'
+  classifier:__choice__, Value: 'sgd'
+  classifier:sgd:alpha, Value: 1.0379182676593809e-05
+  classifier:sgd:average, Value: 'False'
+  classifier:sgd:eta0, Value: 2.2316207761131583e-05
+  classifier:sgd:fit_intercept, Constant: 'True'
+  classifier:sgd:learning_rate, Value: 'invscaling'
+  classifier:sgd:loss, Value: 'perceptron'
+  classifier:sgd:penalty, Value: 'l2'
+  classifier:sgd:power_t, Value: 0.34160555954890687
+  classifier:sgd:tol, Value: 0.006867085178762876
+  imputation:strategy, Value: 'median'
+  preprocessor:__choice__, Value: 'no_preprocessing'
+  rescaling:__choice__, Value: 'quantile_transformer'
+  rescaling:quantile_transformer:n_quantiles, Value: 87
+  rescaling:quantile_transformer:output_distribution, Value: 'normal'
+, 'backend': <autosklearn.util.backend.Backend object at 0x7f25501d86a0>, 'metric': accuracy, 'seed': 4069378761, 'num_run': 13, 'all_scoring_functions': False, 'output_y_hat_optimization': True, 'include': {}, 'exclude': {}, 'disable_file_output': False, 'instance': '{"task_id": "heart_disease"}', 'init_params': {'instance': '{"task_id": "heart_disease"}'}, 'resampling_strategy': 'holdout', 'resampling_strategy_args': {'train_size': 0.67}}
+[DEBUG] [2020-02-13 16:02:53,289:pynisher] call function
+[DEBUG] [2020-02-13 16:02:57,886:autosklearn.util.backend] _make_internals_directory: [Errno 17] File exists: '../results/tmp_hd_holdout_parallel/.auto-sklearn'
+[DEBUG] [2020-02-13 16:02:57,976:pynisher] function returned properly: (None, 0)
+[DEBUG] [2020-02-13 16:02:57,976:pynisher] return value: (None, 0)
+[DEBUG] [2020-02-13 16:02:58,078:AutoMLSMBO(4069378761)::heart_disease] Return: Status: <StatusType.SUCCESS: 1>, cost: 0.253333, time: 4.696331, additional: {'duration': 4.492506504058838, 'num_run': 13, 'train_loss': 0.17105263157894735, 'configuration_origin': 'Random Search'}
+[INFO] [2020-02-13 16:02:58,079:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[INFO] [2020-02-13 16:02:58,079:smac.intensification.intensification.Intensifier] Updated estimated cost of incumbent on 1 runs: 0.1333
+[DEBUG] [2020-02-13 16:02:58,170:root] Remaining budget: 11.826725 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] #Incumbent changed: 3
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] #Target algorithm runs: 12 / inf
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] Used wallclock time: 39.49 / 51.23 sec 
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] Used target algorithm runtime: 22.88 / inf sec
+[DEBUG] [2020-02-13 16:02:58,170:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:02:58,171:smac.stats.stats.Stats] Average Configurations per Intensify: 2.20
+[DEBUG] [2020-02-13 16:02:58,171:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.13
+[DEBUG] [2020-02-13 16:02:58,171:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:02:58,774:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:02:59,180:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 34 observations
+[DEBUG] [2020-02-13 16:03:01,576:smac.optimizer.ei_optimization.LocalSearch] Local search took 1 steps and looked at 67 configurations. Computing the acquisition value for one configuration took 0.011805 seconds on average.
+[DEBUG] [2020-02-13 16:03:01,582:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:01,878:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:02,282:smac.optimizer.ei_optimization.LocalSearch] Local search took 3 steps and looked at 43 configurations. Computing the acquisition value for one configuration took 0.009603 seconds on average.
+[DEBUG] [2020-02-13 16:03:02,478:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:02,886:smac.optimizer.ei_optimization.LocalSearch] Local search took 2 steps and looked at 45 configurations. Computing the acquisition value for one configuration took 0.008954 seconds on average.
+[DEBUG] [2020-02-13 16:03:07,383:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[array([[0.02010117]]), 'Local Search'], [0.019964571715985317, 'Random Search (sorted)'], [0.019964571715985317, 'Random Search (sorted)'], [0.019964571715985317, 'Random Search (sorted)'], [array([0.01996457]), 'Local Search'], [0.019491557571022385, 'Random Search (sorted)'], [0.019491557571022385, 'Random Search (sorted)'], [0.01943628338050291, 'Random Search (sorted)'], [0.018255640634507526, 'Random Search (sorted)'], [0.01805799598018272, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:03:07,395:root] Remaining budget: 2.513514 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Statistics:
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] #Incumbent changed: 3
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] #Target algorithm runs: 12 / inf
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Used wallclock time: 48.72 / 51.23 sec 
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Used target algorithm runtime: 22.88 / inf sec
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Average Configurations per Intensify: 2.20
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.13
+[DEBUG] [2020-02-13 16:03:07,395:smac.stats.stats.Stats] ##########################################################
+[DEBUG] [2020-02-13 16:03:07,495:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Transform runhistory into X,y format
+[DEBUG] [2020-02-13 16:03:07,588:smac.runhistory.runhistory2epm.RunHistory2EPM4Cost] Converted 37 observations
+[DEBUG] [2020-02-13 16:03:07,885:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:07,981:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:07,984:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,174:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,181:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,481:smac.optimizer.ei_optimization.LocalSearch] Local search took 6 steps and looked at 136 configurations. Computing the acquisition value for one configuration took 0.004206 seconds on average.
+[DEBUG] [2020-02-13 16:03:08,585:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,777:smac.optimizer.ei_optimization.LocalSearch] Local search took 2 steps and looked at 63 configurations. Computing the acquisition value for one configuration took 0.003181 seconds on average.
+[DEBUG] [2020-02-13 16:03:08,786:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,886:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,979:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,984:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:08,995:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,086:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,278:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,375:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,393:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,490:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:09,678:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:10,172:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:10,278:smac.optimizer.ei_optimization.LocalSearch] Switch to one of the neighbors
+[DEBUG] [2020-02-13 16:03:10,693:smac.optimizer.ei_optimization.LocalSearch] Local search took 14 steps and looked at 252 configurations. Computing the acquisition value for one configuration took 0.006251 seconds on average.
+[DEBUG] [2020-02-13 16:03:12,287:smac.optimizer.ei_optimization.InterleavedLocalAndRandomSearch] First 10 acq func (origin) values of selected configurations: [[array([[0.05006591]]), 'Local Search'], [array([[0.05006591]]), 'Local Search'], [0.048612360644351656, 'Random Search (sorted)'], [0.045333220618932704, 'Random Search (sorted)'], [0.04528915305132639, 'Random Search (sorted)'], [0.04514800791615385, 'Random Search (sorted)'], [0.04514491169174565, 'Random Search (sorted)'], [0.04514491169174565, 'Random Search (sorted)'], [0.043843927478612536, 'Random Search (sorted)'], [0.043372020657907295, 'Random Search (sorted)']]
+[DEBUG] [2020-02-13 16:03:12,296:root] Remaining budget: -2.387840 (wallclock), inf (ta costs), inf (target runs)
+[DEBUG] [2020-02-13 16:03:12,375:smac.stats.stats.Stats] Saving stats to ../results/tmp_hd_holdout_parallel/smac3-output/run_4069378761/stats.json
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] ##########################################################
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Statistics:
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] #Incumbent changed: 3
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] #Target algorithm runs: 12 / inf
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Used wallclock time: 53.70 / 51.23 sec 
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Used target algorithm runtime: 22.88 / inf sec
+[DEBUG] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Debug Statistics:
+[DEBUG] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Average Configurations per Intensify: 2.20
+[DEBUG] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] Exponential Moving Average of Configurations per Intensify: 2.13
+[INFO] [2020-02-13 16:03:12,376:smac.stats.stats.Stats] ##########################################################
+[INFO] [2020-02-13 16:03:12,376:smac.facade.smac_facade.SMAC] Final Incumbent: Configuration:
+  balancing:strategy, Value: 'weighting'
+  categorical_encoding:__choice__, Value: 'no_encoding'
+  classifier:__choice__, Value: 'qda'
+  classifier:qda:reg_param, Value: 0.3852952765746872
+  imputation:strategy, Value: 'most_frequent'
+  preprocessor:__choice__, Value: 'liblinear_svc_preprocessor'
+  preprocessor:liblinear_svc_preprocessor:C, Value: 9.321082529099513
+  preprocessor:liblinear_svc_preprocessor:dual, Constant: 'False'
+  preprocessor:liblinear_svc_preprocessor:fit_intercept, Constant: 'True'
+  preprocessor:liblinear_svc_preprocessor:intercept_scaling, Constant: 1
+  preprocessor:liblinear_svc_preprocessor:loss, Value: 'squared_hinge'
+  preprocessor:liblinear_svc_preprocessor:multi_class, Constant: 'ovr'
+  preprocessor:liblinear_svc_preprocessor:penalty, Constant: 'l1'
+  preprocessor:liblinear_svc_preprocessor:tol, Value: 0.0002529400461870885
+  rescaling:__choice__, Value: 'robust_scaler'
+  rescaling:robust_scaler:q_max, Value: 0.9503095475486327
+  rescaling:robust_scaler:q_min, Value: 0.23900532900034
+
